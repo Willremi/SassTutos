@@ -46,6 +46,10 @@ $yellow:  #ffc107 !default;
 $green:   #198754 !default;
 $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
+
+$primary: #839c49;
+$secondary: #9c4983;
+
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -298,8 +302,8 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+// $primary:       $blue !default;
+// $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -379,6 +383,7 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
+  6: $spacer * 5
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -463,7 +468,7 @@ $container-max-widths: (
 //
 // Set the number of columns and specify the width of the gutters.
 
-$grid-columns:                12 !default;
+$grid-columns:                18 !default;
 $grid-gutter-width:           1.5rem !default;
 $grid-row-columns:            6 !default;
 
@@ -487,7 +492,7 @@ $border-widths: (
 ) !default;
 
 $border-style:                solid !default;
-$border-color:                $gray-300 !default;
+$border-color:                $primary !default;
 $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
@@ -566,7 +571,7 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
+$h1-font-size:                $font-size-base * 3 !default;
 $h2-font-size:                $font-size-base * 2 !default;
 $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
