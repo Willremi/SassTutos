@@ -1,0 +1,58 @@
+#hgroup{
+    float: left;
+    h1{
+        color: $color;
+        font-size: 2em;
+        line-height: 1em;
+    }
+    p{
+        font-style: italic;
+    }
+    @media #{$small-screen}{
+        float: none;
+        text-align: center;
+    }
+}
+#search {
+    float: right;
+    margin-top: 0.75rem;
+    position: relative;
+    @media #{$small-screen} {
+        float: none;
+        width: 12rem;
+        margin: 1rem auto 0;
+    }
+    input {
+        font: {
+            family: $body-font;
+            size: 1.25rem;
+        }
+        height: 2rem;
+        width: 10rem;
+        box-sizing: border-box;
+        border: none;
+        background-color: $ultra-light;
+        color: $dark;
+        float: left;
+        padding: 0;
+    }
+    button {
+        box-sizing: border-box;
+        padding: 0;
+        border: none;
+        font-size: 0;
+        float: left;
+        width: 2rem;
+        background-color: transparent;
+        &::after {
+            background-image: url('../img/search.png');
+            content: '';
+            display: block;
+            width: 2rem;
+            height: 2rem;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}

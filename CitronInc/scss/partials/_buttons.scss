@@ -1,0 +1,33 @@
+@mixin button($color, $background-color, $hover-color) {
+    font: {
+        family: $head-font;
+        size: 1.25rem;
+    }
+    text: {
+        decoration: none;
+        align: center;
+    }
+    padding: .5rem;
+    width: 12.5rem;
+    border: none;
+    display: block;
+    float: none;
+    margin: .5rem auto 0;
+    background-color: $background-color;
+    color: $color;
+    &:hover{
+        background-color: $color-hover;
+    }
+    @media #{$large-screen}{
+        display: inline-block;
+        float: right;
+    }
+}
+
+#produits .more, #clients .more{
+    @include button($ultra-light, $dark, $dark-hover);
+    
+}
+#production .more, #contact button{
+    @include button($dark, $color, $color-hover);
+}
