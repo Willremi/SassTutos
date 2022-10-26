@@ -6,7 +6,7 @@ ouvrir le fichier settings.json en passant par "Fichier/Préférences/Paramètre
 "liveSassCompile.settings.formats": [{  
     "format": "expanded",  
     "extensionName": ".css",  
-    "savePath": "~/../css/"  
+    "savePath": "\~/../css/"  
     },  
     {  
     "format": "compressed",  
