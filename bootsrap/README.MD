@@ -11,6 +11,6 @@ ouvrir le fichier settings.json en passant par "Fichier/Préférences/Paramètre
     {  
     "format": "compressed",  
     "extensionName": ".min.css",  
-    "savePath": "~/../css/"  
+    "savePath": "\~/../css/"  
     }  
 ],  
